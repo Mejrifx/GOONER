@@ -780,6 +780,21 @@
             }
         }
 
+        /* Generator Buttons Responsive Styles */
+        @media (max-width: 768px) {
+            /* On mobile, make buttons smaller and ensure they stack if needed */
+            div[style*="display: flex; justify-content: center"] img[src*="generator"] {
+                max-width: 250px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* On smaller mobile, make buttons even smaller */
+            div[style*="display: flex; justify-content: center"] img[src*="generator"] {
+                max-width: 200px !important;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -848,11 +863,18 @@
                 <img src="https://pfst.cf2.poecdn.net/base/image/98d18d81d99e87361a46214b0c8d18ada6a5771304d86c082a1d802a90c405e3?w=2771&amp;h=402" alt="GOONER" class="mx-auto w-full h-auto gooner-title-thick" style="max-width: 480px; margin-top: -20px;">
             </div>
             
-            <!-- Gooner PFP Generator Image -->
+            <!-- Generator Buttons Container -->
             <div class="text-center" style="margin-top: 40px; margin-bottom: 0; position: relative; z-index: 5;">
-                <a href="https://pfp.gooner.fun/" target="_blank" style="display: inline-block; cursor: pointer;">
-                    <img src="gooner-pfp-generator.png" alt="Gooner PFP Generator" class="mx-auto" style="max-width: 300px; height: auto; display: block; position: relative; z-index: 5; transition: transform 0.2s ease;">
-                </a>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+                    <!-- Gooner PFP Generator Button -->
+                    <a href="https://pfp.gooner.fun/" target="_blank" style="display: inline-block; cursor: pointer; flex-shrink: 0;">
+                        <img src="gooner-pfp-generator-button.png" alt="Gooner PFP Generator" style="max-width: 300px; height: auto; display: block; position: relative; z-index: 5; transition: transform 0.2s ease;">
+                    </a>
+                    <!-- Gooner XP Card Generator Button -->
+                    <a href="#" target="_blank" style="display: inline-block; cursor: pointer; flex-shrink: 0;">
+                        <img src="gooner-xp-card-generator.png" alt="Gooner XP Card Generator" style="max-width: 300px; height: auto; display: block; position: relative; z-index: 5; transition: transform 0.2s ease;">
+                    </a>
+                </div>
             </div>
             
             <!-- GOONER Balancing on Banner -->
